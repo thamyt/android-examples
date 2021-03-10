@@ -33,10 +33,10 @@ public class SummaryListAdapter extends ArrayAdapter<String> {
         View rowView = inflater.inflate(R.layout.summary_item, parent, false);
         //View rowView=inflater.inflate(R.layout.mylist, null,true);
 
-        TextView titleText = (TextView) rowView.findViewById(R.id.title_textview);
-        TextView totalAmtText = (TextView) rowView.findViewById(R.id.totalamt_textview);
+        TextView titleText = (TextView) rowView.findViewById(R.id.summarytitle_textview);
+        //TextView totalAmtText = (TextView) rowView.findViewById(R.id.totalamt_textview);
         titleText.setText(mData.get(position));
-        totalAmtText.setText("$XXXX.XX");
+        //totalAmtText.setText("$XXXX.XX");
 
         return rowView;
     }

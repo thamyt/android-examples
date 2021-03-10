@@ -45,7 +45,6 @@ public class HomeFragment extends Fragment {
         //final ArrayAdapter<String> adapter = new ArrayAdapter<String>(root.getContext(),android.R.layout.simple_list_item_1, android.R.id.text1, mSummaryItems);
         SummaryListAdapter adapter = new SummaryListAdapter(root.getContext(), Arrays.asList(mSummaryItems));
         listView.setAdapter(adapter);
-        //listView.setDivider(null);
 
         return root;
     }
